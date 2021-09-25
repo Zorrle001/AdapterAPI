@@ -16,7 +16,7 @@ Die API ist dafür gedacht, dass man sie in andere Projekte integriert um so gan
 - <a href="#dokumentation-deutsch">Dokumentation Deutsch</a>
 
 	- <a href="#kapitel-1-wie-sieht-ein-adapter-aus">Kapitel 1: Wie sieht ein Adapter aus?</a>
-	- <a href="I#kapitel-2-ein-listeneradapter">Kapitel 2: Ein ListenerAdapter</a>
+	- <a href="#kapitel-2-ein-listeneradapter">Kapitel 2: Ein ListenerAdapter</a>
 	- <a href="#kapitel-3-in-arbeit">Kapitel 3: In Arbeit...</a>
 
 <h2>Dokumentation (Deutsch)</h2>
