@@ -90,3 +90,4 @@ Bitte beachte, dass die Klasse in der die ListenerAdapter registriert sind den A
 kannst oder willst kannst du auch <code>AdapterManager.</code> vor jede der Methoden schreiben, um auf den Static-Weg die Methoden 
 anzusprechen
 
+<h2>Kapitel 3 in Arbeit...</h2>
