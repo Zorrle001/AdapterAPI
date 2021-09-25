@@ -43,7 +43,7 @@ Ihr müsst eurem AdapterEvent immer einen Parameternamen zuordnen z.B adapter (w
 
 Der Code ist nun einfach der Bereich in dem ihr definiert, was ausgeführt werden soll, wenn euer Adapter ausgeführt wird.
 
-</h4>MERKE:</h4>
+<h4>MERKE:</h4>
 Wichtige Methoden sind hierbei:
 
 ```java
@@ -54,3 +54,39 @@ adapter.isCancelled();
 
 Hiermit kannst du ein AdapterEvent steuern und es Abbrechen mit <code>adapter.setCancelled(true)</code> und auslesen ob es abgebrochen ist oder nicht
 mit <code>adapter.isCancelled()</code> Diese Methode gibt einen Boolean zurück welcher den Status des AdapterEvents darstellt
+
+<h3>Kapitel 2: Ein ListenerAdapter</h3>
+
+```java
+public class TestListener implements ListenerAdapter {
+
+  @AdapterHandler
+  public void onTest(TestAdapter a) {
+    System.out.println("Test123");
+  }
+	
+}
+```
+
+Im Grunde genommen ist der ListenerAdapter eine Klasse, in der sich ein oder mehrere Adapter befinden.
+Diese Klasse muss immer einen ListenerAdapter Implementieren, damit die API versteht, dass diese Klasse
+ein ListenerAdapter ist.
+
+Jetzt musst du nurnoch der API sagen wo sich dieser ListenerAdapter befindet:
+
+```java
+public static void main(String[] args) {
+  addListenerAdapter(new TestListener());
+}
+```
+
+Dies solltest du immer am Anfang machen, also am besten in der <code>main</code>-Methode oder kurz nach dem Start des Programmes.
+Die Klasse in der du deine ListenerAdapter registrierst, muss den AdapterManager Extenden mit <code>public class {Classname} extends AdapterManager</code>.
+Du kannst einen ListenerAdapter auch wieder entfernen mit <code>removeListenerAdapter(ListenerAdapter)</code> oder direkt alle löschen
+mit <code>clearListenerAdapters()</code>
+  
+<h4>WICHTIG:</h4>
+Bitte beachte, dass die Klasse in der die ListenerAdapter registriert sind den AdapterManager Extenden muss! Wenn du dass jedoch nicht
+kannst oder willst kannst du auch <code>AdapterManager.</code> vor jede der Methoden schreiben, um auf den Static-Weg die Methoden 
+anzusprechen
+
