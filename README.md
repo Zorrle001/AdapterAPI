@@ -10,6 +10,15 @@ Die Adapter API ist ein neues Projekt von mir, das für jeden öffentlich zugän
 
 Die API ist dafür gedacht, dass man sie in andere Projekte integriert um so ganz einfache Events, oder wie sie hier heißen Adapter, zu erstellen. Damit kann jeder Nutzer der dass Projekt benutzt und ihr selber extrem einfach ein ganzes System erstellen
 
+<h2>Overview / Übersicht</h2>
+
+- <a href="#documentation-english">Documentation English -> Work in progress, coming soon</a>
+- <a href="#dokumentation-deutsch">Dokumentation Deutsch</a>
+
+	- <a href="#kapitel-1-wie-sieht-ein-adapter-aus">Kapitel 1: Wie sieht ein Adapter aus?</a>
+	- <a href="I#kapitel-2-ein-listeneradapter">Kapitel 2: Ein ListenerAdapter</a>
+	- <a href="#kapitel-3-in-arbeit">Kapitel 3: In Arbeit...</a>
+
 <h2>Dokumentation (Deutsch)</h2>
 
 <h3>Kapitel 1: Wie sieht ein Adapter aus?</h3>
@@ -44,13 +53,15 @@ Ihr müsst eurem AdapterEvent immer einen Parameternamen zuordnen z.B adapter (w
 Der Code ist nun einfach der Bereich in dem ihr definiert, was ausgeführt werden soll, wenn euer Adapter ausgeführt wird.
 
 <h4>MERKE:</h4>
+
 Wichtige Methoden sind hierbei:
 
 ```java
 adapter.setCancelled(true);
 adapter.setCancelled(false);
-adapter.isCancelled();
+adapter.isCancelled()
 ```
+
 
 Hiermit kannst du ein AdapterEvent steuern und es Abbrechen mit <code>adapter.setCancelled(true)</code> und auslesen ob es abgebrochen ist oder nicht
 mit <code>adapter.isCancelled()</code> Diese Methode gibt einen Boolean zurück welcher den Status des AdapterEvents darstellt
