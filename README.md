@@ -101,4 +101,6 @@ Bitte beachte, dass die Klasse in der die ListenerAdapter registriert sind den A
 kannst oder willst kannst du auch <code>AdapterManager.</code> vor jede der Methoden schreiben, um auf den Static-Weg die Methoden 
 anzusprechen
 
-<h2>Kapitel 3 in Arbeit...</h2>
+<h3>Kapitel 3: Ein eigener Adapter</h3>
+
+Du kannst deinen auch deinen eigenen Adapter erstellen, der bei bestimmten Events in jedem registrierten AdapterListener von diesem Typ aufgerufen und übergeben wird
