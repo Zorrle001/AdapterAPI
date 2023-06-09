@@ -46,7 +46,7 @@ Wichtig ist nun der Parameter der in der Methode übergeben wird. Dieser Paramet
 Wenn dieses AdapterEvent ausgeführt wird, werden alle Adapter mit diesem Parameter ausgeführt.
 
 <h4>WICHTIG:</h4>
-Ihr müsst eurem AdapterEvent immer einen Parameternamen zuordnen z.B `adapter` (wie im Beispiel gezeigt), sonst gibt es einen Fehler!
+Ihr müsst eurem AdapterEvent immer einen Parameternamen zuordnen z.B <code>adapter</code> (wie im Beispiel gezeigt), sonst gibt es einen Fehler!
 
 <h4>Teil 3: Der Code</h4>
 
